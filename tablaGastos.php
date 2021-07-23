@@ -13,6 +13,7 @@
         <th>ID</th>
         <th>Nombre o desc</th>
         <th>Monto</th>
+        <th>Fecha</th>
         <th>Editar</th>
         <th>Eliminar</th>
     </thead>
@@ -24,6 +25,7 @@
             <td><?php echo $mostrar['id_gasto'];?></td>
             <td><?php echo $mostrar['nombre'];?></td>
             <td><?php echo "$".$mostrar['monto'];?></td>
+            <td><?php echo $mostrar['fecha']; ?></td>
             <td>
                 <form action="actualizar.php" method="POST">
                     <input type="text" hidden name="idGasto" value="<?php echo $mostrar['id_gasto']?>">
